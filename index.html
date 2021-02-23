@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Booklist</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">Booklist</h1>
+  </header>
+  <section>
+    <form class="form">
+      <Label>Book Title</Label>
+      <input type="text" id="title" class="form-control"/>
+      <Label>Author</Label>
+      <input type="text" id="author" class="form-control"/>
+      <button class='btn btn-add'>Add</button>
+    </form>
+    <!-- Define a HTML table -->
+    <table>
+      <!-- Group the header content in the table -->
+      <thead>
+        <!-- Define a table row -->
+        <tr>
+          <!-- Define the table headers -->
+          <section>
+              <th>Title</th>
+              <th>Author</th>
+              <th></th>
+          </section>
+        </tr>
+      </thead>
+      <!-- group the body content in the table -->
+      <tbody id="book-list"></tbody>
+    </table>
+  </section>
+  <footer>Some content</footer>
+  <script src="app.js"></script>
+</body>
+</html>
